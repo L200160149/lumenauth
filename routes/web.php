@@ -21,3 +21,5 @@ $router->get('/key', function() {
 
 $router->post('/register', 'AuthController@register');
 $router->post('/login', 'AuthController@login');
+
+$router->get('/user/{id}', 'UserController@show');
